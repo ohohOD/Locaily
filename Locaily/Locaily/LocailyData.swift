@@ -8,7 +8,8 @@
 
 import UIKit
 
-class LocailyData: NSObject {
+class LocailyData: NSObject{
+    
     //var favoriteno: String = ""
     var locationno: String = ""
     var id: String = ""

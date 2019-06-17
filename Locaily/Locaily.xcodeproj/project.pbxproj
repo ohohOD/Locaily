@@ -14,6 +14,7 @@
 		CD47CDFA22B38FC20048DC51 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47CDF922B38FC20048DC51 /* DetailViewController.swift */; };
 		CD47CDFC22B38FEC0048DC51 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47CDFB22B38FEC0048DC51 /* AddViewController.swift */; };
 		CD80A84322B50C9A0090C78A /* LocailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80A84222B50C9A0090C78A /* LocailyData.swift */; };
+		CD80A84622B745F60090C78A /* LocailyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80A84522B745F60090C78A /* LocailyAnnotation.swift */; };
 		CDA421ED22B3699900D22AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA421EC22B3699900D22AE1 /* AppDelegate.swift */; };
 		CDA421EF22B3699900D22AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA421EE22B3699900D22AE1 /* ViewController.swift */; };
 		CDA421F222B3699900D22AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA421F022B3699900D22AE1 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		CD47CDF922B38FC20048DC51 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CD47CDFB22B38FEC0048DC51 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		CD80A84222B50C9A0090C78A /* LocailyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocailyData.swift; sourceTree = "<group>"; };
+		CD80A84522B745F60090C78A /* LocailyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocailyAnnotation.swift; sourceTree = "<group>"; };
 		CDA421E922B3699900D22AE1 /* Locaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA421EC22B3699900D22AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDA421EE22B3699900D22AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				CDA421FB22B3699A00D22AE1 /* Info.plist */,
 				CDA421F322B3699900D22AE1 /* Locaily.xcdatamodeld */,
 				CD80A84222B50C9A0090C78A /* LocailyData.swift */,
+				CD80A84522B745F60090C78A /* LocailyAnnotation.swift */,
 			);
 			path = Locaily;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				CDA421EF22B3699900D22AE1 /* ViewController.swift in Sources */,
 				CDA421F522B3699900D22AE1 /* Locaily.xcdatamodeld in Sources */,
 				CD47CDFC22B38FEC0048DC51 /* AddViewController.swift in Sources */,
+				CD80A84622B745F60090C78A /* LocailyAnnotation.swift in Sources */,
 				CD47CDF022B38D630048DC51 /* JoinViewController.swift in Sources */,
 				CD47CDF822B38F9F0048DC51 /* ListTableViewController.swift in Sources */,
 				CD47CDF222B38EB70048DC51 /* MapViewController.swift in Sources */,

@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--List Table View Controller-->
+        <!--Locaily List-->
         <scene sceneID="afM-bN-Hr0">
             <objects>
-                <tableViewController storyboardIdentifier="listView" id="xqL-fy-2FU" customClass="ListTableViewController" customModule="Locaily" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="listView" title="Locaily List" id="xqL-fy-2FU" customClass="ListTableViewController" customModule="Locaily" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7YS-AZ-dgi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,11 +145,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="ao2-lO-3dW">
                         <barButtonItem key="leftBarButtonItem" title="Logout" image="logout.png" id="A7a-wK-FMB">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="buttonLogout:" destination="xqL-fy-2FU" id="T7m-mo-Mer"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sxx-Tf-rhi">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="cOz-Pi-Dem" kind="show" identifier="ListToAddView" id="Bn4-5U-Fcm"/>
                             </connections>
@@ -301,16 +303,16 @@
             </objects>
             <point key="canvasLocation" x="4740" y="188.45577211394306"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Locaily Map-->
         <scene sceneID="FJa-n6-LTg">
             <objects>
-                <viewController id="FWp-mL-6TH" customClass="MapViewController" customModule="Locaily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Locaily Map" id="FWp-mL-6TH" customClass="MapViewController" customModule="Locaily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3as-lj-8qk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hM4-Gy-gAb">
-                                <rect key="frame" x="0.0" y="145" width="375" height="473"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tn8-Ta-mzV">
@@ -320,21 +322,32 @@
                                     <segment title="Standard"/>
                                     <segment title="Satellite"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="updateMap:" destination="FWp-mL-6TH" eventType="valueChanged" id="4Iy-nj-jT3"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k6A-Tj-kJm"/>
                     </view>
                     <navigationItem key="navigationItem" id="y6e-Tg-6al">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" image="logout.png" id="Anf-0E-i1C"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" image="logout.png" id="Anf-0E-i1C">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="buttonLogout:" destination="FWp-mL-6TH" id="Rru-BY-BPn"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="nZs-pw-MJC">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="cOz-Pi-Dem" kind="show" identifier="MapToAddView" id="dg7-Hx-jz4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="2Pi-Na-YJm" kind="show" id="1aK-xn-TeM"/>
+                        <outlet property="map" destination="hM4-Gy-gAb" id="hQa-gt-vOG"/>
+                        <segue destination="2Pi-Na-YJm" kind="show" identifier="MapToDetailView" id="1aK-xn-TeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drJ-YU-7qM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -475,8 +488,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ODD-Wf-zTM" kind="relationship" relationship="viewControllers" id="jkl-4R-AcW"/>
                         <segue destination="ekq-be-G7E" kind="relationship" relationship="viewControllers" id="SGS-Oi-kfx"/>
+                        <segue destination="ODD-Wf-zTM" kind="relationship" relationship="viewControllers" id="gXS-pR-zUL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5az-Yn-3au" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -508,6 +521,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dg7-Hx-jz4"/>
-        <segue reference="3Ak-TC-A7V"/>
+        <segue reference="1aK-xn-TeM"/>
     </inferredMetricsTieBreakers>
 </document>

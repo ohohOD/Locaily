@@ -66,11 +66,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        guard let favoriteData = selectedData else { return }
-        self.title = favoriteData.title
-        textDate.text = favoriteData.date
-        textDescription.text = favoriteData.text
-        var imageName = favoriteData.imagename // 숫자.jpg 로 저장된 파일 이름
+        guard let LocailyData = selectedData else { return }
+        self.title = LocailyData.title
+        textDate.text = LocailyData.date
+        textDescription.text = LocailyData.text
+        var imageName = LocailyData.imagename // 숫자.jpg 로 저장된 파일 이름
         
         if (imageName != "") {
             let urlString = "http://condi.swu.ac.kr/student/M04/daily/image/"
@@ -82,7 +82,7 @@ class DetailViewController: UIViewController {
         }
         
         // feeling Index를 불러와서 해당하는 그림으로 교체해준다
-        feelingIndex = Int(favoriteData.feeling)
+        feelingIndex = Int(LocailyData.feeling)
         // feeling.image = ...(이미지 배열 선언 후, 인덱스에 맞게 갈아끼우면 될 것 같음)
         
         // Do any additional setup after loading the view.
