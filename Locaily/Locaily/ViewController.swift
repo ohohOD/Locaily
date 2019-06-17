@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var labelStatus: UILabel!
     @IBOutlet var loginUserid: UITextField!
     @IBOutlet var loginPassword: UITextField!
+    @IBOutlet var switchSave: UISwitch!
+    
+    var IdSave: [NSManagedObject] = []
     
     // 엔터를 쳤을 때의 반응
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -23,6 +27,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         textField.resignFirstResponder()
         return true
+    }
+    
+    // coredata에 저장한 값을 불러옵니다
+    func getContext() -> NSManagedObjectContext { // 데이터베이스 연결
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
     }
     
     @IBAction func loginPressed() {
@@ -87,6 +97,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             let appDelegate = UIApplication.shared.delegate as! AppDelegate
                             appDelegate.ID = self.loginUserid.text
                             appDelegate.userName = name
+                            self.updateID()
                             self.performSegue(withIdentifier: "toLoginSuccess", sender: self)
                         }
                     }
@@ -103,10 +114,75 @@ class ViewController: UIViewController, UITextFieldDelegate {
         task.resume()
     }
     
+    // 아이디를 CoreData에 저장하는 함수
+    func updateID() {
+        if(switchSave.isOn) { // 스위치가 켜져있을 경우
+            deleteID() // CoreData에 저장되어있던 기존값이 있다면 삭제하고,
+            saveID() // 아이디 값을 저장합니다
+        }
+        else { // 스위치가 꺼져있을 경우
+            deleteID() // CoreData에 저장되어있던 기존 값을 삭제합니다
+        }
+    }
+    
+    func saveID() {
+        let context = getContext()
+        let entity = NSEntityDescription.entity(forEntityName: "IDSave", in: context)
+        // id record를 새로 생성함
+        let object = NSManagedObject(entity: entity!, insertInto: context)
+        object.setValue(loginUserid.text, forKey: "id")
+        object.setValue(Date(), forKey: "date")
+        do {
+            try context.save()
+            print("saved!")
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
+    // 아이디를 CoreData에서 삭제하는 함수
+    func deleteID() {
+        let context = self.getContext()
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "IDSave")
+        do {
+            IdSave = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)") }
+        
+        // 값이 있을 경우, 해당 값을 삭제합니다
+        if(IdSave.count != 0) {
+            context.delete(IdSave[0])
+            
+            do {
+                try context.save()
+                print("deleted!")
+            } catch let error as NSError {
+                print("Could not delete \(error), \(error.userInfo)")
+            }
+        }
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let context = self.getContext()
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "IDSave")
+        do {
+            IdSave = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)") }
+        
+        // 값이 있을 경우, 스위치를 켜고 아이디 텍스트 필드를 갱신합니다
+        if(IdSave.count != 0) {
+            let id = IdSave[0]
+            if let idLabel = id.value(forKey: "id") as? String {
+                loginUserid.text = idLabel
+                switchSave.isOn = true
+            }
+        }
+        
     }
 
 
