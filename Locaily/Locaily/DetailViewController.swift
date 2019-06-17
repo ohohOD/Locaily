@@ -15,6 +15,8 @@ class DetailViewController: UIViewController {
     @IBOutlet var textDescription: UITextView!
     @IBOutlet var textDate: UILabel!
     
+    let feelingImage: [UIImage?] = [UIImage(named: "feeling1-1"), UIImage(named: "feeling2-1"), UIImage(named: "feeling3-1"), UIImage(named: "feeling4-1")]
+    
     var selectedData: LocailyData?
     var feelingIndex: Int!
     
@@ -68,7 +70,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         guard let LocailyData = selectedData else { return }
         self.title = LocailyData.title
-        textDate.text = LocailyData.date
+        textDate.text = "Date: " + LocailyData.date
         textDescription.text = LocailyData.text
         var imageName = LocailyData.imagename // 숫자.jpg 로 저장된 파일 이름
         
@@ -83,7 +85,7 @@ class DetailViewController: UIViewController {
         
         // feeling Index를 불러와서 해당하는 그림으로 교체해준다
         feelingIndex = Int(LocailyData.feeling)
-        // feeling.image = ...(이미지 배열 선언 후, 인덱스에 맞게 갈아끼우면 될 것 같음)
+        feeling.image = feelingImage[feelingIndex]
         
         // Do any additional setup after loading the view.
     }
