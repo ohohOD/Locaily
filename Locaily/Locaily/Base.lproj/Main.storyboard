@@ -507,7 +507,7 @@
         <scene sceneID="aPT-q2-AZZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODD-Wf-zTM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" selectedImage="list.png" id="9mz-b8-qdm"/>
+                    <tabBarItem key="tabBarItem" title="List" image="list.png" selectedImage="list.png" id="9mz-b8-qdm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="spe-JP-VGr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -545,7 +545,7 @@
         <scene sceneID="fSQ-lg-f0A">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekq-be-G7E" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" selectedImage="map.png" id="pQ7-SY-lqo"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map.png" selectedImage="map.png" id="pQ7-SY-lqo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0rW-r0-9HV">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -578,7 +578,7 @@
         <image name="map.png" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dg7-Hx-jz4"/>
-        <segue reference="1aK-xn-TeM"/>
+        <segue reference="Bn4-5U-Fcm"/>
+        <segue reference="3Ak-TC-A7V"/>
     </inferredMetricsTieBreakers>
 </document>
