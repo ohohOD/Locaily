@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDA7B37422AF795B0012E4E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7B37322AF795B0012E4E5 /* AppDelegate.swift */; };
-		CDA7B37622AF795B0012E4E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7B37522AF795B0012E4E5 /* ViewController.swift */; };
-		CDA7B37922AF795B0012E4E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA7B37722AF795B0012E4E5 /* Main.storyboard */; };
-		CDA7B37B22AF795D0012E4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA7B37A22AF795D0012E4E5 /* Assets.xcassets */; };
-		CDA7B37E22AF795D0012E4E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA7B37C22AF795D0012E4E5 /* LaunchScreen.storyboard */; };
+		CD47CDED22B387680048DC51 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = CD47CDEC22B387680048DC51 /* logout.png */; };
+		CD47CDF022B38D630048DC51 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47CDEF22B38D630048DC51 /* JoinViewController.swift */; };
+		CD47CDF222B38EB70048DC51 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47CDF122B38EB70048DC51 /* MapViewController.swift */; };
+		CD47CDF822B38F9F0048DC51 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47CDF722B38F9F0048DC51 /* ListTableViewController.swift */; };
+		CD47CDFA22B38FC20048DC51 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47CDF922B38FC20048DC51 /* DetailViewController.swift */; };
+		CD47CDFC22B38FEC0048DC51 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47CDFB22B38FEC0048DC51 /* AddViewController.swift */; };
+		CD80A84322B50C9A0090C78A /* LocailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80A84222B50C9A0090C78A /* LocailyData.swift */; };
+		CDA421ED22B3699900D22AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA421EC22B3699900D22AE1 /* AppDelegate.swift */; };
+		CDA421EF22B3699900D22AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA421EE22B3699900D22AE1 /* ViewController.swift */; };
+		CDA421F222B3699900D22AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA421F022B3699900D22AE1 /* Main.storyboard */; };
+		CDA421F522B3699900D22AE1 /* Locaily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDA421F322B3699900D22AE1 /* Locaily.xcdatamodeld */; };
+		CDA421F722B3699A00D22AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA421F622B3699A00D22AE1 /* Assets.xcassets */; };
+		CDA421FA22B3699A00D22AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA421F822B3699A00D22AE1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CDA7B37022AF795B0012E4E5 /* Locaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDA7B37322AF795B0012E4E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDA7B37522AF795B0012E4E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CDA7B37822AF795B0012E4E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDA7B37A22AF795D0012E4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CDA7B37D22AF795D0012E4E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CDA7B37F22AF795D0012E4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD47CDEC22B387680048DC51 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		CD47CDEF22B38D630048DC51 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		CD47CDF122B38EB70048DC51 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CD47CDF722B38F9F0048DC51 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		CD47CDF922B38FC20048DC51 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CD47CDFB22B38FEC0048DC51 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		CD80A84222B50C9A0090C78A /* LocailyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocailyData.swift; sourceTree = "<group>"; };
+		CDA421E922B3699900D22AE1 /* Locaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA421EC22B3699900D22AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDA421EE22B3699900D22AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDA421F122B3699900D22AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDA421F422B3699900D22AE1 /* Locaily.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Locaily.xcdatamodel; sourceTree = "<group>"; };
+		CDA421F622B3699A00D22AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDA421F922B3699A00D22AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDA421FB22B3699A00D22AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CDA7B36D22AF795B0012E4E5 /* Frameworks */ = {
+		CDA421E622B3699900D22AE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +51,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CDA7B36722AF795B0012E4E5 = {
+		CD47CDEE22B3877B0048DC51 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				CDA7B37222AF795B0012E4E5 /* Locaily */,
-				CDA7B37122AF795B0012E4E5 /* Products */,
+				CD47CDEC22B387680048DC51 /* logout.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		CD47CDF622B38EF00048DC51 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CDA421EE22B3699900D22AE1 /* ViewController.swift */,
+				CD47CDEF22B38D630048DC51 /* JoinViewController.swift */,
+				CD47CDF122B38EB70048DC51 /* MapViewController.swift */,
+				CD47CDF722B38F9F0048DC51 /* ListTableViewController.swift */,
+				CD47CDF922B38FC20048DC51 /* DetailViewController.swift */,
+				CD47CDFB22B38FEC0048DC51 /* AddViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CDA421E022B3699900D22AE1 = {
+			isa = PBXGroup;
+			children = (
+				CDA421EB22B3699900D22AE1 /* Locaily */,
+				CDA421EA22B3699900D22AE1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CDA7B37122AF795B0012E4E5 /* Products */ = {
+		CDA421EA22B3699900D22AE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDA7B37022AF795B0012E4E5 /* Locaily.app */,
+				CDA421E922B3699900D22AE1 /* Locaily.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CDA7B37222AF795B0012E4E5 /* Locaily */ = {
+		CDA421EB22B3699900D22AE1 /* Locaily */ = {
 			isa = PBXGroup;
 			children = (
-				CDA7B37322AF795B0012E4E5 /* AppDelegate.swift */,
-				CDA7B37522AF795B0012E4E5 /* ViewController.swift */,
-				CDA7B37722AF795B0012E4E5 /* Main.storyboard */,
-				CDA7B37A22AF795D0012E4E5 /* Assets.xcassets */,
-				CDA7B37C22AF795D0012E4E5 /* LaunchScreen.storyboard */,
-				CDA7B37F22AF795D0012E4E5 /* Info.plist */,
+				CD47CDF622B38EF00048DC51 /* VC */,
+				CD47CDEE22B3877B0048DC51 /* img */,
+				CDA421EC22B3699900D22AE1 /* AppDelegate.swift */,
+				CDA421F022B3699900D22AE1 /* Main.storyboard */,
+				CDA421F622B3699A00D22AE1 /* Assets.xcassets */,
+				CDA421F822B3699A00D22AE1 /* LaunchScreen.storyboard */,
+				CDA421FB22B3699A00D22AE1 /* Info.plist */,
+				CDA421F322B3699900D22AE1 /* Locaily.xcdatamodeld */,
+				CD80A84222B50C9A0090C78A /* LocailyData.swift */,
 			);
 			path = Locaily;
 			sourceTree = "<group>";
@@ -67,13 +107,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDA7B36F22AF795B0012E4E5 /* Locaily */ = {
+		CDA421E822B3699900D22AE1 /* Locaily */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDA7B38222AF795D0012E4E5 /* Build configuration list for PBXNativeTarget "Locaily" */;
+			buildConfigurationList = CDA421FE22B3699A00D22AE1 /* Build configuration list for PBXNativeTarget "Locaily" */;
 			buildPhases = (
-				CDA7B36C22AF795B0012E4E5 /* Sources */,
-				CDA7B36D22AF795B0012E4E5 /* Frameworks */,
-				CDA7B36E22AF795B0012E4E5 /* Resources */,
+				CDA421E522B3699900D22AE1 /* Sources */,
+				CDA421E622B3699900D22AE1 /* Frameworks */,
+				CDA421E722B3699900D22AE1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -81,25 +121,25 @@
 			);
 			name = Locaily;
 			productName = Locaily;
-			productReference = CDA7B37022AF795B0012E4E5 /* Locaily.app */;
+			productReference = CDA421E922B3699900D22AE1 /* Locaily.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CDA7B36822AF795B0012E4E5 /* Project object */ = {
+		CDA421E122B3699900D22AE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = SWUCOMPUTER;
 				TargetAttributes = {
-					CDA7B36F22AF795B0012E4E5 = {
+					CDA421E822B3699900D22AE1 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = CDA7B36B22AF795B0012E4E5 /* Build configuration list for PBXProject "Locaily" */;
+			buildConfigurationList = CDA421E422B3699900D22AE1 /* Build configuration list for PBXProject "Locaily" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +147,62 @@
 				en,
 				Base,
 			);
-			mainGroup = CDA7B36722AF795B0012E4E5;
-			productRefGroup = CDA7B37122AF795B0012E4E5 /* Products */;
+			mainGroup = CDA421E022B3699900D22AE1;
+			productRefGroup = CDA421EA22B3699900D22AE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CDA7B36F22AF795B0012E4E5 /* Locaily */,
+				CDA421E822B3699900D22AE1 /* Locaily */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CDA7B36E22AF795B0012E4E5 /* Resources */ = {
+		CDA421E722B3699900D22AE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA7B37E22AF795D0012E4E5 /* LaunchScreen.storyboard in Resources */,
-				CDA7B37B22AF795D0012E4E5 /* Assets.xcassets in Resources */,
-				CDA7B37922AF795B0012E4E5 /* Main.storyboard in Resources */,
+				CDA421FA22B3699A00D22AE1 /* LaunchScreen.storyboard in Resources */,
+				CDA421F722B3699A00D22AE1 /* Assets.xcassets in Resources */,
+				CDA421F222B3699900D22AE1 /* Main.storyboard in Resources */,
+				CD47CDED22B387680048DC51 /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CDA7B36C22AF795B0012E4E5 /* Sources */ = {
+		CDA421E522B3699900D22AE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA7B37622AF795B0012E4E5 /* ViewController.swift in Sources */,
-				CDA7B37422AF795B0012E4E5 /* AppDelegate.swift in Sources */,
+				CDA421EF22B3699900D22AE1 /* ViewController.swift in Sources */,
+				CDA421F522B3699900D22AE1 /* Locaily.xcdatamodeld in Sources */,
+				CD47CDFC22B38FEC0048DC51 /* AddViewController.swift in Sources */,
+				CD47CDF022B38D630048DC51 /* JoinViewController.swift in Sources */,
+				CD47CDF822B38F9F0048DC51 /* ListTableViewController.swift in Sources */,
+				CD47CDF222B38EB70048DC51 /* MapViewController.swift in Sources */,
+				CDA421ED22B3699900D22AE1 /* AppDelegate.swift in Sources */,
+				CD47CDFA22B38FC20048DC51 /* DetailViewController.swift in Sources */,
+				CD80A84322B50C9A0090C78A /* LocailyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CDA7B37722AF795B0012E4E5 /* Main.storyboard */ = {
+		CDA421F022B3699900D22AE1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CDA7B37822AF795B0012E4E5 /* Base */,
+				CDA421F122B3699900D22AE1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CDA7B37C22AF795D0012E4E5 /* LaunchScreen.storyboard */ = {
+		CDA421F822B3699A00D22AE1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CDA7B37D22AF795D0012E4E5 /* Base */,
+				CDA421F922B3699A00D22AE1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +210,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CDA7B38022AF795D0012E4E5 /* Debug */ = {
+		CDA421FC22B3699A00D22AE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +271,7 @@
 			};
 			name = Debug;
 		};
-		CDA7B38122AF795D0012E4E5 /* Release */ = {
+		CDA421FD22B3699A00D22AE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +326,7 @@
 			};
 			name = Release;
 		};
-		CDA7B38322AF795D0012E4E5 /* Debug */ = {
+		CDA421FF22B3699A00D22AE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -295,7 +343,7 @@
 			};
 			name = Debug;
 		};
-		CDA7B38422AF795D0012E4E5 /* Release */ = {
+		CDA4220022B3699A00D22AE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -315,25 +363,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CDA7B36B22AF795B0012E4E5 /* Build configuration list for PBXProject "Locaily" */ = {
+		CDA421E422B3699900D22AE1 /* Build configuration list for PBXProject "Locaily" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDA7B38022AF795D0012E4E5 /* Debug */,
-				CDA7B38122AF795D0012E4E5 /* Release */,
+				CDA421FC22B3699A00D22AE1 /* Debug */,
+				CDA421FD22B3699A00D22AE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDA7B38222AF795D0012E4E5 /* Build configuration list for PBXNativeTarget "Locaily" */ = {
+		CDA421FE22B3699A00D22AE1 /* Build configuration list for PBXNativeTarget "Locaily" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDA7B38322AF795D0012E4E5 /* Debug */,
-				CDA7B38422AF795D0012E4E5 /* Release */,
+				CDA421FF22B3699A00D22AE1 /* Debug */,
+				CDA4220022B3699A00D22AE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDA421F322B3699900D22AE1 /* Locaily.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDA421F422B3699900D22AE1 /* Locaily.xcdatamodel */,
+			);
+			currentVersion = CDA421F422B3699900D22AE1 /* Locaily.xcdatamodel */;
+			path = Locaily.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = CDA7B36822AF795B0012E4E5 /* Project object */;
+	rootObject = CDA421E122B3699900D22AE1 /* Project object */;
 }
